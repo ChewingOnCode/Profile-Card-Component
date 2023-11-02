@@ -1,0 +1,33 @@
+:root {
+  /* Primary */
+  --Darkcyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --DarkGray: hsl(0, 0%, 59%);
+  /* Font Size */
+  /* Name and Stats */
+  --fs-18: 18px;
+  /* Font Weight */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+body {
+  background-color: var(--Darkcyan);
+  height: 800px;
+}
+
+.bgTop {
+  
+}
+
+.bgBottom {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

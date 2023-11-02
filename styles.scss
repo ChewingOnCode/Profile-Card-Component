@@ -29,8 +29,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 350px;
     height: 400px;
+    margin: 10px;
     .bgCard {
       width: 100%;
       border-top-right-radius: 20px;
@@ -47,6 +48,23 @@ body {
       background-color: var(--White);
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+      .title {
+        margin-bottom: 10px;
+        .name {
+          font-weight: var(--fw-700);
+          font-size: var(--fs-18);
+        }
+        .age {
+          font-weight: var(--fw-400);
+          color: var(--DarkGray);
+          margin-left: 10px;
+          font-size: var(--fs-18);
+        }
+      }
+      .city {
+        margin-bottom: 20px;
+        color: var(--DarkGray);
+      }
       // Profile Image
       .profileImg {
         border-radius: 50%;
@@ -55,7 +73,7 @@ body {
         top: -50px;
       }
       hr {
-        border-color: var(--DarkGray);
+        border: 1px solid var(--DarkGray);
         width: 100%;
       }
       .stats {
@@ -70,8 +88,15 @@ body {
           flex-direction: column;
           text-align: center;
         }
+        .title {
+          color: var(--DarkGray);
+          font-size: 11px;
+          letter-spacing: 2px;
+          margin: 5px;
+        }
         .number {
           font-weight: var(--fw-700);
+          font-size: var(--fs-18);
         }
       }
     }

@@ -30,8 +30,9 @@ body .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 350px;
   height: 400px;
+  margin: 10px;
 }
 body .card .bgCard {
   width: 100%;
@@ -49,6 +50,23 @@ body .card .cardContent {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+body .card .cardContent .title {
+  margin-bottom: 10px;
+}
+body .card .cardContent .title .name {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-18);
+}
+body .card .cardContent .title .age {
+  font-weight: var(--fw-400);
+  color: var(--DarkGray);
+  margin-left: 10px;
+  font-size: var(--fs-18);
+}
+body .card .cardContent .city {
+  margin-bottom: 20px;
+  color: var(--DarkGray);
+}
 body .card .cardContent .profileImg {
   border-radius: 50%;
   border: 5px solid white;
@@ -56,7 +74,7 @@ body .card .cardContent .profileImg {
   top: -50px;
 }
 body .card .cardContent hr {
-  border-color: var(--DarkGray);
+  border: 1px solid var(--DarkGray);
   width: 100%;
 }
 body .card .cardContent .stats {
@@ -72,8 +90,15 @@ body .card .cardContent .stats .Photos {
   flex-direction: column;
   text-align: center;
 }
+body .card .cardContent .stats .title {
+  color: var(--DarkGray);
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 5px;
+}
 body .card .cardContent .stats .number {
   font-weight: var(--fw-700);
+  font-size: var(--fs-18);
 }
 body .card .attribution {
   margin: 10px;

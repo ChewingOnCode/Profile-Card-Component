@@ -1,0 +1,90 @@
+:root {
+  /* Primary */
+  --Darkcyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --White: hsl(0, 100%, 100%);
+  /* Neutral */
+  --DarkGray: hsl(0, 0%, 59%);
+  /* Font */
+  --Kumbh: "Kumbh Sans", sans-serif;
+  /* Font Size */
+  /* Name and Stats */
+  --fs-18: 18px;
+  /* Font Weight */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+body {
+  height: 100vh;
+  background: var(--Darkcyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--Kumbh);
+  // Card
+  .card {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    .bgCard {
+      width: 100%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    // Card Content
+    .cardContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      background-color: var(--White);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      // Profile Image
+      .profileImg {
+        border-radius: 50%;
+        border: 5px solid white;
+        position: relative;
+        top: -50px;
+      }
+      hr {
+        border-color: var(--DarkGray);
+        width: 100%;
+      }
+      .stats {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        .Followers,
+        .Likes,
+        .Photos {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        .number {
+          font-weight: var(--fw-700);
+        }
+      }
+    }
+    .attribution {
+      margin: 10px;
+    }
+  }
+  /* Attribution */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
